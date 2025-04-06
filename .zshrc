@@ -40,3 +40,15 @@ HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory
 alias dotfiles='/usr/bin/git --git-dir=/home/ridoo14/.dotfiles/ --work-tree=/home/ridoo14'
+
+export EDITOR="nvim"
+
+export COPY_CMD="xclip -selection clipboard"
+export PASTE_CMD="xclip -selection clipboard -o"
+
+  export PYENV_ROOT="$HOME/.pyenv"
+  export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init --path)"
+  eval "$(pyenv init -)"
+  eval "$(pyenv virtualenv-init -)"
+
