@@ -43,8 +43,6 @@ alias dotfiles='/usr/bin/git --git-dir=/home/ridoo14/.dotfiles/ --work-tree=/hom
 
 export EDITOR="nvim"
 
-export COPY_CMD="xclip -selection clipboard"
-export PASTE_CMD="xclip -selection clipboard -o"
 
   export PYENV_ROOT="$HOME/.pyenv"
   export PATH="$PYENV_ROOT/bin:$PATH"
