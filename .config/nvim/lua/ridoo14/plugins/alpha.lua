@@ -153,7 +153,7 @@ return {
 
       -- Set menu
       dashboard.section.buttons.val = {
-        dashboard.button('f', '  > Find file', ':Telescope find_files<CR>'),
+        dashboard.button('leader f', '  > Find file', ':Telescope find_files<CR>'),
         dashboard.button('s', '  > Settings', ':Oil --float C:/Users/Lenovo/AppData/Local/nvim<CR>'),
         dashboard.button('q', '  > Quit NVIM', ':qa<CR>'),
       }
@@ -168,7 +168,7 @@ return {
 
       -- Keymap
       -- Open dashboard
-      vim.api.nvim_set_keymap('n', '<leader>h', ':Alpha<CR>', { noremap = true, silent = true })
+      vim.api.nvim_set_keymap('n', '<C-h>', ':Alpha<CR>', { noremap = true, silent = true })
     end,
   },
 }
