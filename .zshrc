@@ -50,3 +50,5 @@ export EDITOR="nvim"
   eval "$(pyenv init -)"
   eval "$(pyenv virtualenv-init -)"
 
+export PATH=$PATH:$(go env GOPATH)/bin
+

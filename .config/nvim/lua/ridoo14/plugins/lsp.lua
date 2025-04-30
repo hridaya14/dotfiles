@@ -33,7 +33,14 @@ return {
         end
 
         require("conform").setup({
-            formatters_by_ft = {}
+            formatters_by_ft = {
+                javascript = { "prettier" },
+                typescript = { "prettier" },
+                javascriptreact = { "prettier" },
+                typescriptreact = { "prettier" },
+                html = { "prettier" },
+                css = { "prettier" },
+            }
         })
 
         local cmp = require('cmp')
@@ -51,6 +58,7 @@ return {
             ensure_installed = {
                 "cssls", "tailwindcss", "html", "lua_ls", "pylsp", "eslint",
                 "jsonls", "gopls", "docker_compose_language_service", "clangd",
+                "tsserver"
             },
             handlers = {
                 function(server_name)
@@ -129,4 +137,3 @@ return {
         })
     end
 }
-
