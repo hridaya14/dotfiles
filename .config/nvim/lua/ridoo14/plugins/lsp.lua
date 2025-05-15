@@ -57,8 +57,7 @@ return {
         require("mason-lspconfig").setup({
             ensure_installed = {
                 "cssls", "tailwindcss", "html", "lua_ls", "pylsp", "eslint",
-                "jsonls", "gopls", "docker_compose_language_service", "clangd",
-                "tsserver"
+                "jsonls", "gopls", "docker_compose_language_service", "clangd"
             },
             handlers = {
                 function(server_name)
